@@ -6279,11 +6279,11 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "hacoidev/crud": 20,
-        "hacoidev/settings": 20,
-        "hacoidev/logmanager": 20,
-        "hacoidev/permissionmanager": 20,
-        "hacoidev/laravel-caching-model": 20
+        "ngockush/crud": 20,
+        "ngockush/settings": 20,
+        "ngockush/logmanager": 20,
+        "ngockush/permissionmanager": 20,
+        "ngockush/laravel-caching-model": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
