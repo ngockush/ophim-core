@@ -109,8 +109,8 @@ class OphimServiceProvider extends ServiceProvider
     protected function publishFiles()
     {
         $backpack_menu_contents_view = [
-            __DIR__ . '/../resources/views/core/base/'  => resource_path('views/vendor/hacoidev/base/'),
-            __DIR__ . '/../resources/views/core/crud/'      => resource_path('views/vendor/hacoidev/crud/'),
+            __DIR__ . '/../resources/views/core/base/'  => resource_path('views/vendor/ngockush/base/'),
+            __DIR__ . '/../resources/views/core/crud/'      => resource_path('views/vendor/ngockush/crud/'),
         ];
 
         $players = [
@@ -142,10 +142,10 @@ class OphimServiceProvider extends ServiceProvider
             \Backpack\CRUD\app\Http\Middleware\UseBackpackAuthGuardInsteadOfDefaultAuthGuard::class,
         ])]);
 
-        config(['cachebusting_string' => \PackageVersions\Versions::getVersion('hacoidev/crud')]);
+        config(['cachebusting_string' => \PackageVersions\Versions::getVersion('ngockush/crud')]);
 
         config(['backpack.base.project_logo' => '<b>Ophim</b>CMS']);
-        config(['backpack.base.developer_name' => 'hacoidev']);
+        config(['backpack.base.developer_name' => 'ngockush']);
         config(['backpack.base.developer_link' => 'mailto:hacoi.dev@gmail.com']);
         config(['backpack.base.show_powered_by' => false]);
     }
